@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".view.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:gravity="center"
+            android:text="Hệ thống cửa tự động nhận dạng khẩu trang và nhiệt độ cơ thể"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnPower"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_power_settings_new_24"
+                app:maxImageSize="50dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnDoor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+
+                android:layout_weight="1"
+
+                android:clickable="true"
+                android:gravity="center"
+                android:src="@drawable/ic_baseline_login_24"
+                app:maxImageSize="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnCamera"
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="30dp">
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Live camera"
+                    android:textSize="30dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnReport"
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="30dp">
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Báo cáo chi tiết"
+                    android:textSize="30dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnStatistical"
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="30dp">
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Thống kê "
+                    android:textSize="30dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
