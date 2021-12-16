@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PBL/PBL4/app/src/main/res/drawable/ic_baseline_power_settings_new_24.xml" value="0.17314814814814813" />
         <entry key="..\:/PBL/PBL4/app/src/main/res/layout/activity_main.xml" value="0.1322463768115942" />
         <entry key="..\:/PBL/PBL4/app/src/main/res/layout/fragment_camera.xml" value="0.17552083333333332" />
         <entry key="..\:/PBL/PBL4/app/src/main/res/layout/fragment_detail.xml" value="0.17552083333333332" />
