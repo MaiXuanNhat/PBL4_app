@@ -12,6 +12,10 @@ public class DBReport {
     @PrimaryKey
     @NonNull
     private String id;
+
+    @ColumnInfo
+    private String imgName;
+
     @ColumnInfo
     private String time;
     @ColumnInfo
@@ -27,7 +31,8 @@ public class DBReport {
         // Cho Firebase
     }
 
-    public DBReport(String time, double temp, boolean maskOn, boolean washHand, boolean openDoor) {
+    public DBReport(String imgName, String time, double temp, boolean maskOn, boolean washHand, boolean openDoor) {
+        this.imgName = imgName;
         this.time = time;
         this.temp = temp;
         this.maskOn = maskOn;
@@ -41,6 +46,14 @@ public class DBReport {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getImgName() {
+        return imgName;
+    }
+
+    public void setImgName(String imgName) {
+        this.imgName = imgName;
     }
 
     public String getTime() {

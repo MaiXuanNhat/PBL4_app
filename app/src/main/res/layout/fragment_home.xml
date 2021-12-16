@@ -4,55 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
-    tools:context=".view.HomeFragment">
-
+    tools:context=".view.HomeFragment"
+    android:background="@color/blue">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="20dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="210dp"
             android:gravity="center"
-            android:text="Hệ thống cửa tự động\n nhận dạng khẩu trang\n và nhiệt độ cơ thể"
+            android:text="HỆ THỐNG CỬA TỰ ĐỘNG\nNHẬN DẠNG KHẨU TRANG\nVÀ NHIỆT ĐỘ CƠ THỂ"
             android:textSize="40dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="111dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal"
             android:layout_margin="20dp">
 
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btnPower"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-
-                android:layout_weight="1"
-                android:clickable="true"
-                android:src="@drawable/ic_baseline_power_settings_new_24"
-                app:maxImageSize="50dp" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btnDoor"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
+                android:orientation="vertical"
+                android:gravity="center">
 
-                android:layout_weight="1"
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnPower"
+                    android:layout_width="100dp"
+                    android:layout_height="112dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_baseline_power_settings_new_24"
+                    app:fabCustomSize="100dp"
+                    app:maxImageSize="80dp" />
 
-                android:clickable="true"
+                <TextView
+                    android:id="@+id/powerState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:src="@drawable/ic_baseline_login_24"
-                app:maxImageSize="50dp" />
+                android:layout_marginStart="100dp">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnDoor"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/ic_baseline_login_24"
+                    app:maxImageSize="80dp"
+                    android:focusable="true"
+                    app:fabCustomSize="100dp" />
+                <TextView
+                    android:id="@+id/doorState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout

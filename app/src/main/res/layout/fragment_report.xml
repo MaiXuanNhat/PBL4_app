@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.ReportFragment">
 
@@ -37,7 +38,8 @@
                     android:layout_weight="1"
                     android:text="Từ:"
                     android:textSize="30dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
 
                 <EditText
                     android:id="@+id/txtFromReport"
@@ -47,7 +49,8 @@
                     android:ems="10"
                     android:gravity="center"
                     android:textSize="30dp"
-                    android:inputType="date" />
+                    android:inputType="date"
+                    android:textColor="@color/white"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -62,7 +65,8 @@
                     android:layout_weight="1"
                     android:text="Đến:"
                     android:textSize="30dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
 
                 <EditText
                     android:id="@+id/txtToReport"
@@ -72,7 +76,8 @@
                     android:ems="10"
                     android:gravity="center"
                     android:textSize="30dp"
-                    android:inputType="date" />
+                    android:inputType="date"
+                    android:textColor="@color/white"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -103,36 +108,42 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:text="STT"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp"
+                    android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:text="Thời gian"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp"
+                    android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:text="Nhiệt độ"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp"
+                    android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:text="Khẩu trang"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp"
+                    android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:text="Rửa tay"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp"
+                    android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
                     android:text="Mở cửa"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp"
+                    android:textColor="@color/white"/>
 
             </LinearLayout>
             <androidx.recyclerview.widget.RecyclerView

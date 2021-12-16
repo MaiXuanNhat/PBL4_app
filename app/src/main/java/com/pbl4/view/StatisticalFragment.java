@@ -172,7 +172,7 @@ public class StatisticalFragment extends Fragment {
         binding.txtCntMask.setText(cntMask+"");
         binding.txtPerMask.setText(String.format("%.1f", (double)100*cntMask/filter.size())+"%");
         // Nhiet do trung binh
-        binding.txtAvgTemp.setText((double)sumTemp/filter.size()+"°C");
+        binding.txtAvgTemp.setText(String.format("%.1f", (double)sumTemp/filter.size())+"°C");
         // Rua tay
         binding.txtCntHand.setText(cntHand+"");
         binding.txtPerHand.setText(String.format("%.1f",(double)100*cntHand/filter.size())+"%");

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.StatisticalFragment">
 
@@ -37,7 +38,8 @@
                 android:layout_weight="1"
                 android:text="Từ:"
                 android:textSize="30dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
             <EditText
                 android:id="@+id/txtFromStas"
@@ -47,7 +49,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:inputType="date"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
         </LinearLayout>
 
         <LinearLayout
@@ -63,7 +66,8 @@
                 android:layout_weight="1"
                 android:text="Đến:"
                 android:textSize="30dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
             <EditText
                 android:id="@+id/txtToStas"
@@ -73,7 +77,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:inputType="date"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -106,7 +111,8 @@
                 android:layout_weight="1"
                 android:textStyle="bold"
                 android:text="Số người:"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/txtCntNum"
@@ -116,7 +122,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:textSize="20dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/txtPerNum"
@@ -126,7 +133,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:textSize="20dp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -140,9 +148,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textStyle="bold"
-
                 android:text="Khẩu trang:"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/txtCntMask"
@@ -152,7 +160,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:textSize="20dp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/txtPerMask"
@@ -162,7 +171,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:textSize="20dp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
 
         </LinearLayout>
         <LinearLayout
@@ -177,9 +187,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textStyle="bold"
-
                 android:text="Nhiệt độ trung bình:"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/txtAvgTemp"
@@ -189,7 +199,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:textAlignment="center"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
 
 
         </LinearLayout>
@@ -205,9 +216,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Số người rửa tay:"
-
                 android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/txtCntHand"
@@ -217,7 +228,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:textAlignment="center"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/txtPerHand"
@@ -227,7 +239,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:textSize="20dp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -241,9 +254,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textStyle="bold"
-
                 android:text="Mở cửa:"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/txtCntOpen"
@@ -253,7 +266,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:textSize="20dp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/txtPerOpen"
@@ -263,7 +277,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:textSize="20dp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
         </LinearLayout>
 
     </LinearLayout>
