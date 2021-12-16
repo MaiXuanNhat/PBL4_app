@@ -13,20 +13,17 @@
             android:id="@+id/action_homeFragment_to_reportFragment"
             app:destination="@id/reportFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_cameraFragment"
-            app:destination="@id/cameraFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_statisticalFragment"
             app:destination="@id/statisticalFragment" />
     </fragment>
     <fragment
-        android:id="@+id/cameraFragment"
-        android:name="com.pbl4.view.CameraFragment"
+        android:id="@+id/detailFragment"
+        android:name="com.pbl4.view.DetailFragment"
         android:label="fragment_camera"
-        tools:layout="@layout/fragment_camera" >
+        tools:layout="@layout/fragment_detail" >
         <action
-            android:id="@+id/action_cameraFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_cameraFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
     </fragment>
     <fragment
         android:id="@+id/reportFragment"
@@ -36,6 +33,9 @@
         <action
             android:id="@+id/action_reportFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_reportFragment_to_cameraFragment"
+            app:destination="@id/detailFragment" />
     </fragment>
     <fragment
         android:id="@+id/statisticalFragment"

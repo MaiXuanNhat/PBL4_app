@@ -11,6 +11,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.pbl4.R;
 import com.pbl4.databinding.FragmentHomeBinding;
 
@@ -18,6 +24,7 @@ import com.pbl4.databinding.FragmentHomeBinding;
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
+    private DatabaseReference mDatabase;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,16 +46,42 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        setUpFirebaseConnection();
         SetActionListener();
     }
 
+    private void setUpFirebaseConnection() {
+        FirebaseApp.initializeApp(getContext());
+        mDatabase = FirebaseDatabase.getInstance().getReference("Status");
+    }
+
     private void SetActionListener() {
-        binding.btnCamera.setOnClickListener(new View.OnClickListener() {
+        binding.btnPower.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.cameraFragment);
+                mDatabase.child("Power").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DataSnapshot> task) {
+                        boolean state = (boolean) task.getResult().getValue();
+                        mDatabase.child("Power").setValue(!state);
+                    }
+                });
             }
         });
+
+        binding.btnDoor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mDatabase.child("Open").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DataSnapshot> task) {
+                        boolean state = (boolean) task.getResult().getValue();
+                        mDatabase.child("Open").setValue(!state);
+                    }
+                });
+            }
+        });
+
         binding.btnReport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

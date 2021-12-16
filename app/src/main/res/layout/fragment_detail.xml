@@ -3,16 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
-    tools:context=".view.CameraFragment">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.DetailFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <View
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <ImageView
             android:id="@+id/live_camera"
             android:layout_width="match_parent"
             android:layout_height="304dp" />
@@ -24,7 +35,6 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView3"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -33,13 +43,12 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/realTime"
+                android:id="@+id/txtDetailTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:inputType="date"
                 android:textSize="20dp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -51,7 +60,6 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -60,13 +68,12 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/txtDetailMask"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:inputType="textPersonName"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
@@ -78,7 +85,6 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView5"
                 android:layout_width="103dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -87,7 +93,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/editTextTextPersonName1"
+                android:id="@+id/txtDetailTemp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -106,7 +112,6 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView"
                 android:layout_width="105dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -115,13 +120,12 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/txtDetailHand"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:inputType="textPersonName"
                 android:textSize="20dp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -132,25 +136,24 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView7"
                 android:layout_width="105dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Cảnh báo:"
+                android:text="Mở cửa:"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/txtDetailOpen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:inputType="textPersonName"
                 android:textSize="20dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
+    </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

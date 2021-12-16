@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "16527758323",
+    "project_id": "pbl4-d00d0",
+    "storage_bucket": "pbl4-d00d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16527758323:android:bfb6df92cc1117be057886",
+        "android_client_info": {
+          "package_name": "com.pbl4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16527758323-fbnngqn5chc91uaihrocv7v256b1nevb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASj7bYfZVou1U54yQrSIrvWMhsN4YRO14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16527758323-fbnngqn5chc91uaihrocv7v256b1nevb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

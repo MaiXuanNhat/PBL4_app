@@ -1,5 +1,6 @@
 package com.pbl4.model;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -8,10 +9,11 @@ import java.util.Date;
 
 @Entity(tableName = "dbReport")
 public class DBReport {
-    @PrimaryKey(autoGenerate = true)
-    private int id;
+    @PrimaryKey
+    @NonNull
+    private String id;
     @ColumnInfo
-    private Date time;
+    private String time;
     @ColumnInfo
     private double temp;
     @ColumnInfo
@@ -21,7 +23,11 @@ public class DBReport {
     @ColumnInfo
     private boolean openDoor;
 
-    public DBReport(Date time, double temp, boolean maskOn, boolean washHand, boolean openDoor) {
+    public DBReport(){
+        // Cho Firebase
+    }
+
+    public DBReport(String time, double temp, boolean maskOn, boolean washHand, boolean openDoor) {
         this.time = time;
         this.temp = temp;
         this.maskOn = maskOn;
@@ -29,19 +35,19 @@ public class DBReport {
         this.openDoor = openDoor;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Date getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Date time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
@@ -49,7 +55,7 @@ public class DBReport {
         return temp;
     }
 
-    public void setTemp(float temp) {
+    public void setTemp(double temp) {
         this.temp = temp;
     }
 

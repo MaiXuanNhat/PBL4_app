@@ -3,13 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.StatisticalFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/stasToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/purple_500"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_margin="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -64,14 +77,21 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="150dp"
             android:orientation="vertical"
             android:gravity="center">
             <Button
                 android:id="@+id/btnFindStas"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
+                android:layout_margin="5dp"
                 android:text="Tìm"/>
+            <Button
+                android:id="@+id/btnReloadStas"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="Cập nhật"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -85,12 +105,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textStyle="bold"
-
                 android:text="Số người:"
                 android:textSize="20dp" />
 
             <TextView
-                android:id="@+id/editTextTextPersonName4"
+                android:id="@+id/txtCntNum"
                 android:layout_width="245dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -100,7 +119,7 @@
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/editTextTextPersonName5"
+                android:id="@+id/txtPerNum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -126,7 +145,7 @@
                 android:textSize="20dp" />
 
             <TextView
-                android:id="@+id/editTextTextPersonName7"
+                android:id="@+id/txtCntMask"
                 android:layout_width="245dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -136,7 +155,7 @@
                 android:inputType="textPersonName"/>
 
             <TextView
-                android:id="@+id/editTextTextPersonName8"
+                android:id="@+id/txtPerMask"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -163,7 +182,7 @@
                 android:textSize="20dp" />
 
             <TextView
-                android:id="@+id/editTextTextPersonName9"
+                android:id="@+id/txtAvgTemp"
                 android:layout_width="245dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -191,7 +210,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/editTextTextPersonName11"
+                android:id="@+id/txtCntHand"
                 android:layout_width="245dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -201,7 +220,7 @@
                 android:textSize="20dp" />
 
             <TextView
-                android:id="@+id/editTextTextPersonName12"
+                android:id="@+id/txtPerHand"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -227,7 +246,7 @@
                 android:textSize="20dp" />
 
             <TextView
-                android:id="@+id/editTextTextPersonName13"
+                android:id="@+id/txtCntOpen"
                 android:layout_width="245dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -237,7 +256,7 @@
                 android:inputType="textPersonName"/>
 
             <TextView
-                android:id="@+id/editTextTextPersonName14"
+                android:id="@+id/txtPerOpen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -248,5 +267,7 @@
         </LinearLayout>
 
     </LinearLayout>
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

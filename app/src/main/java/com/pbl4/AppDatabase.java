@@ -12,14 +12,13 @@ import com.pbl4.model.DateConverter;
 import com.pbl4.viewmodel.ReportDAO;
 
 @Database(entities = {DBReport.class}, version = 1, exportSchema = false)
-@TypeConverters({DateConverter.class})
 public abstract class AppDatabase extends RoomDatabase {
     public abstract ReportDAO reportDAO();
     private static AppDatabase _Instance;
     public static AppDatabase Instance(Context context){
         if (_Instance == null){
             _Instance = Room.databaseBuilder(context,
-                    AppDatabase.class, "DBReport").addTypeConverter(DateConverter.class).build();
+                    AppDatabase.class, "DBReport").build();
         }
         return _Instance;
     }

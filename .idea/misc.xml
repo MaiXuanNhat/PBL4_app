@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PBL/PBL4/app/src/main/res/layout/activity_main.xml" value="0.1322463768115942" />
+        <entry key="..\:/PBL/PBL4/app/src/main/res/layout/fragment_camera.xml" value="0.17552083333333332" />
+        <entry key="..\:/PBL/PBL4/app/src/main/res/layout/fragment_detail.xml" value="0.17552083333333332" />
+        <entry key="..\:/PBL/PBL4/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/PBL/PBL4/app/src/main/res/layout/fragment_homepage.xml" value="0.17552083333333332" />
         <entry key="..\:/PBL/PBL4/app/src/main/res/layout/fragment_report.xml" value="0.16168478260869565" />
         <entry key="..\:/PBL/PBL4/app/src/main/res/layout/fragment_statistical.xml" value="0.16168478260869565" />
         <entry key="..\:/PBL/PBL4/app/src/main/res/layout/report_row_item.xml" value="0.16168478260869565" />
