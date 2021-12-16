@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="210dp"
             android:gravity="center"
-            android:text="Hệ thống cửa tự động nhận dạng khẩu trang và nhiệt độ cơ thể"
+            android:text="Hệ thống cửa tự động\n nhận dạng khẩu trang\n và nhiệt độ cơ thể"
             android:textSize="40dp"
             android:textStyle="bold" />
 
@@ -26,7 +26,8 @@
             android:layout_width="match_parent"
             android:layout_height="111dp"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
 
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -66,7 +67,7 @@
                 android:layout_height="100dp"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="10dp"
-                android:layout_marginBottom="30dp">
+                android:layout_margin="30dp">
 
 
 
@@ -90,7 +91,7 @@
                 android:layout_height="100dp"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="10dp"
-                android:layout_marginBottom="30dp">
+                android:layout_margin="30dp">
 
 
 

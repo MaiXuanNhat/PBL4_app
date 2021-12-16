@@ -170,14 +170,14 @@ public class StatisticalFragment extends Fragment {
         binding.txtPerNum.setText("100%");
         // Khau trang
         binding.txtCntMask.setText(cntMask+"");
-        binding.txtPerMask.setText(String.format("%.2f", (double)100*cntMask/filter.size())+"%");
+        binding.txtPerMask.setText(String.format("%.1f", (double)100*cntMask/filter.size())+"%");
         // Nhiet do trung binh
         binding.txtAvgTemp.setText((double)sumTemp/filter.size()+"°C");
         // Rua tay
         binding.txtCntHand.setText(cntHand+"");
-        binding.txtPerHand.setText(String.format("%.2f",(double)100*cntHand/filter.size())+"%");
+        binding.txtPerHand.setText(String.format("%.1f",(double)100*cntHand/filter.size())+"%");
         // Mo cua
         binding.txtCntOpen.setText(cntOpen+"");
-        binding.txtPerOpen.setText(String.format("%.2f",(double)100*cntOpen/filter.size())+"%");
+        binding.txtPerOpen.setText(String.format("%.1f",(double)100*cntOpen/filter.size())+"%");
     }
 }
