@@ -30,16 +30,10 @@
             android:orientation="horizontal"
             android:layout_margin="20dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
-
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnPower"
                     android:layout_width="100dp"
-                    android:layout_height="112dp"
+                    android:layout_height="100dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
@@ -47,22 +41,8 @@
                     app:fabCustomSize="100dp"
                     app:maxImageSize="80dp" />
 
-                <TextView
-                    android:id="@+id/powerState"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:textSize="30dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"/>
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_marginStart="100dp">
+
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnDoor"
                     android:layout_width="100dp"
@@ -72,16 +52,9 @@
                     android:src="@drawable/ic_baseline_login_24"
                     app:maxImageSize="80dp"
                     android:focusable="true"
+                    android:layout_marginStart="100dp"
                     app:fabCustomSize="100dp" />
-                <TextView
-                    android:id="@+id/doorState"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:textSize="30dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"/>
-            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout

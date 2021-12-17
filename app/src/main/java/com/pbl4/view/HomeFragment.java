@@ -54,26 +54,9 @@ public class HomeFragment extends Fragment {
         FirebaseApp.initializeApp(getContext());
         mDatabase = FirebaseDatabase.getInstance().getReference("Status");
 
-        setUpStates();
     }
 
-    private void setUpStates() {
-        mDatabase.child("Power").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DataSnapshot> task) {
-                boolean state = (boolean) task.getResult().getValue();
-                binding.powerState.setText(state ? "On" : "Off");
-            }
-        });
 
-        mDatabase.child("Open").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DataSnapshot> task) {
-                boolean state = (boolean) task.getResult().getValue();
-                binding.doorState.setText(state ? "Open" : "Close");
-            }
-        });
-    }
 
     private void SetActionListener() {
         binding.btnPower.setOnClickListener(new View.OnClickListener() {
@@ -84,7 +67,6 @@ public class HomeFragment extends Fragment {
                     public void onComplete(@NonNull Task<DataSnapshot> task) {
                         boolean state = (boolean) task.getResult().getValue();
                         mDatabase.child("Power").setValue(!state);
-                        setUpStates();
                     }
                 });
             }
@@ -98,7 +80,6 @@ public class HomeFragment extends Fragment {
                     public void onComplete(@NonNull Task<DataSnapshot> task) {
                         boolean state = (boolean) task.getResult().getValue();
                         mDatabase.child("Open").setValue(!state);
-                        setUpStates();
                     }
                 });
             }
